@@ -15,7 +15,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping({"/persona"})
+@RequestMapping({"/ABCback/persona"})
 
 public class ControladorPersona 
 {

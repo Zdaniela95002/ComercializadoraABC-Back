@@ -29,6 +29,11 @@ public class DetalleService
 	{
 		return detalleRepositorio.findById(cod);
 	}
+	
+	/*public ArrayList<Detalle> findByPedido (int codPedido)
+	{
+		return detalleRepositorio.findByPedido(codPedido);
+	}*/
 
 	public boolean eliminarDetalles(int cod) 
 	{

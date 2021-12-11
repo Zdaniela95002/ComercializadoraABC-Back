@@ -16,7 +16,7 @@ import com.comercializarora.ABCback.Entities.Pedido;
 import com.comercializarora.ABCback.Services.PedidoService;
 
 @RestController
-@RequestMapping({"/pedido"})
+@RequestMapping({"/ABCback/pedido"})
 public class ControladorPedido 
 {
 	@Autowired

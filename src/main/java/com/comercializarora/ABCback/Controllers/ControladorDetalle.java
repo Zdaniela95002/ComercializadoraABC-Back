@@ -10,13 +10,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.comercializarora.ABCback.Entities.Detalle;
+
 import com.comercializarora.ABCback.Services.DetalleService;
 
 @RestController
-@RequestMapping({"/detalle"})
+@RequestMapping({"/ABCback/detalle"})
 public class ControladorDetalle
 {
 	@Autowired
@@ -34,11 +36,20 @@ public class ControladorDetalle
 		return service.guardarDetalle(p);
 	}
 	
+	/*@GetMapping("/query")
+	public ArrayList<Detalle> ObtenerPedido (@RequestParam("codPedido") int codPedido)
+	{
+		return service.findByPedido(codPedido);
+	}*/
+	
 	@GetMapping(path= "/{codDetalle}")
 	public Optional<Detalle>ObtenerUsuarioPorId(@PathVariable("codDetalle") int codDetalle)
 	{
 		return this.service.obtenerporId(codDetalle);
 	}
+	
+	
+	
 		
 	@DeleteMapping(path= "/{codDetalle}")
 	public String eliminarporId(@PathVariable("codDetalle") int codDetalle) 

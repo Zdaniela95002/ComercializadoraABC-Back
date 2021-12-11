@@ -12,21 +12,21 @@ public class Producto
 {
 	@Id
 	@Column() 
-	int codProducto;
+	int codproducto;
 	@Column 
 	String nombre;
 	@Column 
-	int precio;
+	int codPrecio;
 	@Column 
 	int stock;
 	
 	public Producto() {}
 
 	public int getcodProducto() {
-		return codProducto;
+		return codproducto;
 	}
-	public void setcodProducto (int codProducto) {
-		this.codProducto = codProducto;
+	public void setcodProducto (int codproducto) {
+		this.codproducto = codproducto;
 	}
 	
 	public String getNombre() {
@@ -37,10 +37,10 @@ public class Producto
 	}
 	
 	public int getcodPrecio() {
-		return precio;
+		return codPrecio;
 	}
-	public void setPrecio (int precio) {
-		this.precio = precio;
+	public void setcodPrecio (int codPrecio) {
+		this.codPrecio = codPrecio;
 	}
 	
 	public int getStock() {

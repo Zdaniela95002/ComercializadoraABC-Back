@@ -12,7 +12,7 @@ import javax.persistence.Table;
 public class Persona 
 {
 	@Id
-	@Column() 
+	@Column 
 	private int identificacion;
 	@Column 
 	private String nombres;

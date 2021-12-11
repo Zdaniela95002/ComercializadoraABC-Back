@@ -13,15 +13,28 @@ import javax.persistence.Table;
 public class Pedido 
 {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	@Column() 
 	int CodPedido;
 	@Column() 
-	int idCliente;
+	int identificacionCliente;
 	@Column() 
 	String fechaPedido;
 	
 	public Pedido() {}
+	
+	public int getIdentificacionCliente() {
+		return identificacionCliente;
+	}
+	public void setIdentificacionCliente(int identificacionCliente) {
+		this.identificacionCliente = identificacionCliente;
+	}
+	
+	public String getfechaPedido() {
+		return fechaPedido;
+	}
+	public void setFechaPedido(String fechaPedido) {
+		this.fechaPedido = fechaPedido;
+	}
 
 	public int getCodPedido() {
 		return CodPedido;
@@ -29,19 +42,9 @@ public class Pedido
 	public void setCodPedido(int CodPedido) {
 		this.CodPedido = CodPedido;
 	}
+
+
+
 	
-	public int getIdCliente() {
-		return idCliente;
-	}
-	public void setIdCliente(int idCliente) {
-		this.idCliente = idCliente;
-	}
-	
-	public String getFechaPedido() {
-		return fechaPedido;
-	}
-	public void setFechaPedido(String fechaPedido) {
-		this.fechaPedido = fechaPedido;
-	}
 	
 }

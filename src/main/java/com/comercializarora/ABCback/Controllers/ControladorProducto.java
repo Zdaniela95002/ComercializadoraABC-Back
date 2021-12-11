@@ -16,7 +16,7 @@ import com.comercializarora.ABCback.Entities.Producto;
 import com.comercializarora.ABCback.Services.ProductoService;
 
 @RestController
-@RequestMapping({"/producto"})
+@RequestMapping({"/ABCback/producto"})
 public class ControladorProducto
 {
 	@Autowired
